@@ -174,3 +174,19 @@ body {
     height: 30px !important;
     text-overflow: ellipsis !important;
 }
+
+.tab {
+    cursor: pointer !important;
+}
+
+.tab::before {
+    content: '';
+    width: 30px;
+    color: #F78F42 !important;
+    border: 1px solid black !important;
+    margin-right: 10px;
+}
+
+.active {
+    color: #F78F42 !important;
+}

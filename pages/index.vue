@@ -3,17 +3,21 @@
         <!-- user info -->
         <UserInfo />
         <!-- companies -->
-        <companyList />
+        <CompanyList />
         <!-- Services Section -->
         <Services />
         <!-- Latest Projects -->
         <LatestProjects />
+        <!-- Resume  -->
+        <Resume />
     </div>
 
 </template>
 
 
 <script setup>
+import Resume from '~/components/index/Resume.vue';
+
 useSeoMeta({
     title: 'My Amazing Site',
     ogTitle: 'My Amazing Site',
