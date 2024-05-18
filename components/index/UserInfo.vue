@@ -3,7 +3,7 @@
         <div class="d-flex flex-column flex-md-row gap-5 align-items-start">
             <div class="col col-md-6 text-start d-flex">
                 <div class="col-6 d-flex flex-column justify-content-between gap-2">
-                    <h1 class="fw-bold my-name">Ali <br> Behzad</h1>
+                    <h1 class="fw-bold my-name" v-html="profile.name.replace(' ', '<br>')"></h1>
                     <div class="socials d-flex flex-column">
                         <hr class="text-warning fw-bold">
                         <span>Social account</span>
@@ -26,7 +26,7 @@
                 </div>
             </div>
             <div class="col col-md-6 d-flex flex-column justify-content-between gap-2">
-                <h2>I'm a Mid-level <br> web creator with Django and Nuxt.js in<br> Ardabil</h2>
+                <h2>I'm a {{ profile.occupation }}<br> in {{profile.address.city}}</h2>
                 <p class="text-secondary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat repellat
                     aliquid
                     consequatur molestias exercitationem voluptate cupiditate temporibus illo modi ex, ratione
@@ -41,4 +41,6 @@
 </template>
 
 <script setup>
+
+const { data: profile, pending, error, refresh } = await useFetch("https://freetestapi.com/api/v1/users/1")
 </script>

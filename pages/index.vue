@@ -10,13 +10,13 @@
         <LatestProjects />
         <!-- Resume  -->
         <Resume />
+        <CustomerComment />
     </div>
 
 </template>
 
 
 <script setup>
-import Resume from '~/components/index/Resume.vue';
 
 useSeoMeta({
     title: 'My Amazing Site',
