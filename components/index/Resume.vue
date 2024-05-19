@@ -1,7 +1,7 @@
 <template>
     <div class="resume container d-flex flex-column gap-3 justify-content-center align-items-center">
         <div class="d-flex flex-column text-center col col-md-6 gap-2">
-            <h2 class="fw-bold">My Resume</h2>
+            <h4 class="fw-bold">My Resume</h4>
             <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptate sed
                 suscipit veniam.
                 Repellat dolore iusto, modi soluta aspernatur quis laudantium enim, necessitatibus officia

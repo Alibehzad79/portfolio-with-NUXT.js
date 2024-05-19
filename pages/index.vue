@@ -10,13 +10,18 @@
         <LatestProjects />
         <!-- Resume  -->
         <Resume />
+        <!-- customer commnets -->
         <CustomerComment />
+        <!-- latest blog -->
+        <LatestBlog />
     </div>
 
 </template>
 
 
 <script setup>
+import LatestBlog from '~/components/index/LatestBlog.vue';
+
 
 useSeoMeta({
     title: 'My Amazing Site',

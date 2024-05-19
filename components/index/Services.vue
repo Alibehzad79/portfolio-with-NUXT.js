@@ -1,7 +1,7 @@
 <template>
     <div class="container d-flex flex-column justify-content-center align-items-center gap-4 p-5 rounded-3">
         <div class="d-flex flex-column text-center col col-md-6 gap-2">
-            <h2 class="fw-bold">My Services</h2>
+            <h4 class="fw-bold">My Services</h4>
             <p class="text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque velit rerum
                 dignissimos voluptates
                 doloremque quos, quibusdam exercitationem. Ad sint non labore, nostrum sed excepturi sequi

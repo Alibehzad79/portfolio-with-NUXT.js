@@ -78,5 +78,5 @@ import { Autoplay, Navigation } from 'swiper/modules';
 const modules = [Autoplay, Navigation]
 
 
-const { data: comments, pending, error, refresh } = await useFetch('https://freetestapi.com/api/v1/politicians?limit=10')
+const { data: comments, pending, error, refresh } = await useAsyncData('comments', () => $fetch('https://freetestapi.com/api/v1/politicians?limit=10'))
 </script>

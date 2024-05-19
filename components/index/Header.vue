@@ -1,6 +1,6 @@
 <template>
-    <div class="my-3 container">
-        <nav class="navbar navbar-expand-sm bg-white rounded-5">
+    <div class="my-3 container sticky-top">
+        <nav class="navbar navbar-expand-sm bg-white rounded-5 shadow">
             <div class="container">
                 <a class="navbar-brand" href="#">Navbar</a>
                 <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"

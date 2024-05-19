@@ -1,6 +1,6 @@
 <template>
     <div class="user-info p-5 rounded-5 container">
-        <div class="d-flex flex-column flex-md-row gap-5 align-items-start">
+        <div class="d-flex flex-column flex-md-row gap-5 align-items-start" v-if="profile">
             <div class="col col-md-6 text-start d-flex">
                 <div class="col-6 d-flex flex-column justify-content-between gap-2">
                     <h1 class="fw-bold my-name" v-html="profile.name.replace(' ', '<br>')"></h1>
@@ -26,7 +26,7 @@
                 </div>
             </div>
             <div class="col col-md-6 d-flex flex-column justify-content-between gap-2">
-                <h2>I'm a {{ profile.occupation }}<br> in {{profile.address.city}}</h2>
+                <h2>I'm a {{ profile.occupation }}<br> in {{ profile.address.city }}</h2>
                 <p class="text-secondary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat repellat
                     aliquid
                     consequatur molestias exercitationem voluptate cupiditate temporibus illo modi ex, ratione
@@ -37,10 +37,14 @@
                 <nuxt-link><Button content="Let's Talk" /></nuxt-link>
             </div>
         </div>
+        <div v-if="pending" class="spinner-border align-items-center text-center" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <p v-if="error" class="alert alert-warning">Connection Error</p>
     </div>
 </template>
 
 <script setup>
 
-const { data: profile, pending, error, refresh } = await useFetch("https://freetestapi.com/api/v1/users/1")
+const { data: profile, pending, error, refresh } = await useAsyncData('profile', () => $fetch("https://freetestapi.com/api/v1/users/1"))
 </script>

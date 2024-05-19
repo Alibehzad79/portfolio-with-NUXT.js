@@ -10,5 +10,5 @@
 </template>
 
 <script setup>
-const { pending, error, data: companyList } = await useFetch('https://picsum.photos/v2/list?page=1&limit=10')
+const { pending, error, data: companyList } = await useAsyncData('companyList', ()=> $fetch('https://picsum.photos/v2/list?page=1&limit=10'))
 </script>
