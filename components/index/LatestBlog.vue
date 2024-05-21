@@ -9,7 +9,7 @@
                 </p>
             </div>
             <div v-if="articles" class="d-flex flex-column gap-5">
-                <div class="row row-cols-1 row-cols-md-3 g-4 align-items-center">
+                <div class="row row-cols-1 row-cols-md-2 g-3 align-items-center">
                     <nuxt-link v-for="article in articles" :key="article" to="#" class="text-decoration-none">
                         <BlogCard :title="article.title"
                             image="https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=background-blur-clean-531880.jpg&fm=jpg"

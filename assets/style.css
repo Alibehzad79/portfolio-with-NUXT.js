@@ -190,3 +190,8 @@ body {
 .active {
     color: #F78F42 !important;
 }
+
+.f-logo {
+    width: 40px !important;
+    height: 40px !important;
+}

@@ -20,7 +20,7 @@
             <div class="col-12 col-md-9 bg-white p-5 rounded tab-content" id="v-pills-tabContent">
                 <div class="tab-pane fade show active gap-3" id="education" role="tabpanel"
                     aria-labelledby="education-tab" tabindex="0">
-                    <div class="d-flex flex-column flex-md-row gap-4">
+                    <div class="d-flex flex-column flex-md-row gap-5">
                         <div class="col col-md-3">
                             <h4 class="h3 text-dark">Education title</h4>
                             <span class="badge bg-warning">Jan 1016 - Dec 2021</span>
@@ -35,7 +35,7 @@
                         </div>
                     </div>
                     <hr class="text-secondary d-block" />
-                    <div class="d-flex flex-column flex-md-row gap-4">
+                    <div class="d-flex flex-column flex-md-row gap-5">
                         <div class="col col-md-3">
                             <h4 class="h3 text-dark">Education title</h4>
                             <span class="badge bg-warning">Jan 1016 - Dec 2021</span>
@@ -51,7 +51,7 @@
                     </div>
                 </div>
                 <div class="tab-pane fade" id="experianc" role="tabpanel" aria-labelledby="experianc-tab" tabindex="0">
-                    <div class="d-flex flex-column flex-md-row gap-4">
+                    <div class="d-flex flex-column flex-md-row gap-5">
                         <div class="col col-md-3">
                             <h4 class="h3 text-dark">Experiance title</h4>
                             <span class="badge bg-warning">Jan 1016 - Dec 2021</span>
@@ -66,7 +66,7 @@
                         </div>
                     </div>
                     <hr class="text-secondary d-block" />
-                    <div class="d-flex flex-column flex-md-row gap-4">
+                    <div class="d-flex flex-column flex-md-row gap-5">
                         <div class="col col-md-3">
                             <h4 class="h3 text-dark">Experiance title</h4>
                             <span class="badge bg-warning">Jan 1016 - Dec 2021</span>

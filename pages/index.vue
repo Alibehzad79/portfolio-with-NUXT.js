@@ -1,5 +1,5 @@
 <template>
-    <div class="index d-flex flex-column gap-5 my-4">
+    <div class="index d-flex flex-column gap-5">
         <!-- user info -->
         <UserInfo />
         <!-- companies -->
@@ -14,6 +14,8 @@
         <CustomerComment />
         <!-- latest blog -->
         <LatestBlog />
+        <!-- Contact Us -->
+        <Contact />
     </div>
 
 </template>
