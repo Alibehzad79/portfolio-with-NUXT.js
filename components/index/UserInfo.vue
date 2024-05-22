@@ -8,16 +8,16 @@
                         <hr class="text-warning fw-bold">
                         <span>Social account</span>
                         <ul class="nav gap-0 m-0 p-0 rounded-1 bg-white justify-content-between">
-                            <li class="nav-item"><a href="#" class="nav-link text-dark social"><i
-                                        class="ri-instagram-fill"></i></a></li>
-                            <li class="nav-item"><a href="#" class="nav-link text-dark social"><i
-                                        class="ri-telegram-fill"></i></a></li>
-                            <li class="nav-item"><a href="#" class="nav-link text-dark social"><i
-                                        class="ri-whatsapp-fill"></i></a></li>
-                            <li class="nav-item"><a href="#" class="nav-link text-dark social"><i
-                                        class="ri-facebook-fill"></i></a></li>
-                            <li class="nav-item"><a href="#" class="nav-link text-dark social"><i
-                                        class="ri-tiktok-fill"></i></a></li>
+                            <li class="nav-item"><nuxt-link to="https://google.com" target="_blank"
+                                    class="nav-link text-dark social"><i class="ri-instagram-fill"></i></nuxt-link></li>
+                            <li class="nav-item"><nuxt-link to="https://google.com" target="_blank"
+                                    class="nav-link text-dark social"><i class="ri-telegram-fill"></i></nuxt-link></li>
+                            <li class="nav-item"><nuxt-link to="https://google.com" target="_blank"
+                                    class="nav-link text-dark social"><i class="ri-whatsapp-fill"></i></nuxt-link></li>
+                            <li class="nav-item"><nuxt-link to="https://google.com" target="_blank"
+                                    class="nav-link text-dark social"><i class="ri-facebook-fill"></i></nuxt-link></li>
+                            <li class="nav-item"><nuxt-link to="https://google.com" target="_blank"
+                                    class="nav-link text-dark social"><i class="ri-tiktok-fill"></i></nuxt-link></li>
                         </ul>
                     </div>
                 </div>
@@ -34,7 +34,7 @@
                     eum cum distinctio corrupti at laudantium velit qui doloremque nam dignissimos eligendi quaerat
                     ad
                     dolores. Illum, quia laboriosam.</p>
-                <nuxt-link><Button content="Let's Talk" /></nuxt-link>
+                <nuxt-link to="/"><Button content="Let's Talk" /></nuxt-link>
             </div>
         </div>
         <div v-if="pending" class="spinner-border align-items-center text-center" role="status">
@@ -46,5 +46,5 @@
 
 <script setup>
 
-const { data: profile, pending, error, refresh } = await useAsyncData('profile', () => $fetch("https://freetestapi.com/api/v1/users/1"))
+const { data: profile, pending, error, refresh } = await useFetch("https://freetestapi.com/api/v1/users/1", { lazy: true })
 </script>

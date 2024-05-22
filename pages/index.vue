@@ -15,7 +15,7 @@
         <!-- latest blog -->
         <LatestBlog />
         <!-- Contact Us -->
-        <Contact />
+        <ContactUs />
     </div>
 
 </template>

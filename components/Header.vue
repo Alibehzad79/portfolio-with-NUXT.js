@@ -2,7 +2,7 @@
     <div class="my-3 container sticky-top">
         <nav class="navbar navbar-expand-sm bg-white rounded-5 shadow">
             <div class="container">
-                <a class="navbar-brand" href="#">Navbar</a>
+                <nuxt-link class="navbar-brand" style="color: black !important;" to="/">Navbar</nuxt-link>
                 <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -31,14 +31,6 @@
 
 </template>
 
-<script>
-export default {
-    name: "Header",
-    data() {
-        return {}
-    },
-    methods: {},
-    mounted() { },
-    watch: {}
-}
+<script setup>
+
 </script>

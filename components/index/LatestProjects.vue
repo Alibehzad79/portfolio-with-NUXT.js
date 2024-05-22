@@ -31,7 +31,7 @@
                     spaceBetween: 50,
                 },
             }" :modules="modules" class="mySwiper">
-                <swiper-slide v-for="project in projects" :key="project">
+                <swiper-slide v-for="project in projects" :key="project" v-if="projects">
                     <div class="col">
                         <div class="card h-100">
                             <img :src="project.image" class="card-img-top img-fluid latest-card-img"
@@ -40,7 +40,7 @@
                                 <h5 class="card-title latest-project-title">{{ project.title }}</h5>
                             </div>
                             <div class="card-footer bg-white border-0">
-                                <router-link class="text-warning nav-link text-start">More</router-link>
+                                <nuxt-link to="/" class="text-warning nav-link text-start">More</nuxt-link>
                             </div>
                         </div>
                     </div>
@@ -50,7 +50,7 @@
                 <span class="visually-hidden">Loading...</span>
             </div>
             <div v-if="error" class="">
-               <p class="alert alert-warning">Connection Error</p>
+                <p class="alert alert-warning">Connection Error</p>
             </div>
         </div>
     </div>
@@ -69,5 +69,5 @@ import './assets/style.css';
 // import required modules
 import { Autoplay, Navigation } from 'swiper/modules';
 const modules = [Autoplay, Navigation]
-const { pending, error, refresh, data: projects } = await useAsyncData('projects', () => $fetch('https://fakestoreapi.com/products'))
+const { pending, error, refresh, data: projects } = await useFetch('https://fakestoreapi.com/products', { lazy: true })
 </script>

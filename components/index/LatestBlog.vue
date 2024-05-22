@@ -10,14 +10,16 @@
             </div>
             <div v-if="articles" class="d-flex flex-column gap-5">
                 <div class="row row-cols-1 row-cols-md-2 g-3 align-items-center">
-                    <nuxt-link v-for="article in articles" :key="article" to="#" class="text-decoration-none">
-                        <BlogCard :title="article.title"
+                    <nuxt-link v-for="article in articles" :key="article.id"
+                        :to="'/articles/' + article.id + '/' + article.title.replaceAll(' ', '-')"
+                        class="text-decoration-none">
+                        <BlogCard :title="article.title" :key="article.id"
                             image="https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=background-blur-clean-531880.jpg&fm=jpg"
                             :content="article.content" />
                     </nuxt-link>
                 </div>
                 <div class="text-center">
-                    <nuxt-link to="#"><Button content="Explore More" class="" /></nuxt-link>
+                    <nuxt-link to="/articles"><Button content="Explore More" class="" /></nuxt-link>
                 </div>
             </div>
             <div v-if="pending" class="spinner-border align-items-center text-center" role="status">

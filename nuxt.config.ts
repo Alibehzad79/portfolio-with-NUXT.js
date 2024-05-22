@@ -1,8 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: [
-    '@nuxtjs/sitemap',
-  ],
+  modules: ['@nuxtjs/sitemap', "@nuxt/image"],
   devtools: { enabled: false },
   app: {
     head: {
@@ -28,7 +26,7 @@ export default defineNuxtConfig({
   components: [
     {
       path
-        : '~/components',
+        : '@/components',
       pathPrefix
         : false,
     },

@@ -1,5 +1,5 @@
 <template>
-    <div class="contact p-5 bg-white">
+    <div class="contact-us p-5 bg-white">
         <di class="container d-flex flex-column gap-4 align-items-center">
             <div class="d-flex flex-column gap-1 text-center col-md-6">
                 <h4 class="fw-bold">Get In Touch</h4>
@@ -9,7 +9,7 @@
             <div class="d-flex flex-column flex-md-row gap-5 w-100">
                 <div class="form-section d-flex flex-column gap-2 col-md-7">
                     <h4>Leave a Message</h4>
-                    <form action="#" method="post" class="form d-flex flex-column gap-2">
+                    <form action="/" method="get" class="form d-flex flex-column gap-2">
                         <div class="d-flex flex-column flex-md-row gap-2 align-items-between">
                             <div class="col col-md-6 d-flex flex-column gap-1">
                                 <label for="name">Name</label>

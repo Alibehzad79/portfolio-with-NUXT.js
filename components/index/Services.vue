@@ -9,25 +9,25 @@
         </div>
         <div class="row row-cols-1 row-cols-md-2 g-4">
             <div class="col">
-                <ServiceCard title="Test Of service title1" icon="ri-code-fill" content="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque velit rerum
+                <ServiceCard title="Test Of service title1" icon="ri-code-fill" key="1" content="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque velit rerum
                     dignissimos voluptates
                     doloremque quos, quibusdam exercitationem. Ad sint non labore, nostrum sed excepturi sequi
                     voluptatem, illum ipsum aperiam in" />
             </div>
             <div class="col">
-                <ServiceCard title="Test Of service title2" icon="ri-phone-fill" content="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque velit rerum
+                <ServiceCard title="Test Of service title2" key="2" icon="ri-phone-fill" content="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque velit rerum
                     dignissimos voluptates
                     doloremque quos, quibusdam exercitationem. Ad sint non labore, nostrum sed excepturi sequi
                     voluptatem, illum ipsum aperiam in" />
             </div>
             <div class="col">
-                <ServiceCard title="Test Of service title3" icon="ri-settings-fill" content="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque velit rerum
+                <ServiceCard title="Test Of service title3" key="3" icon="ri-settings-fill" content="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque velit rerum
                     dignissimos voluptates
                     doloremque quos, quibusdam exercitationem. Ad sint non labore, nostrum sed excepturi sequi
                     voluptatem, illum ipsum aperiam in" />
             </div>
             <div class="col">
-                <ServiceCard title="Test Of service title4" icon="ri-computer-fill" content="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque velit rerum
+                <ServiceCard title="Test Of service title4" key="4" icon="ri-computer-fill" content="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque velit rerum
                     dignissimos voluptates
                     doloremque quos, quibusdam exercitationem. Ad sint non labore, nostrum sed excepturi sequi
                     voluptatem, illum ipsum aperiam in" />

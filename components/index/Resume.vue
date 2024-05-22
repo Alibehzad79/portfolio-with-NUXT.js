@@ -13,7 +13,7 @@
                 <span class="tab active" id="education-tab" data-bs-toggle="pill" data-bs-target="#education" role="tab"
                     aria-controls="education" aria-selected="true">Education</span>
                 <span class="tab" id="experianc-tab" data-bs-toggle="pill" data-bs-target="#experianc" role="tab"
-                    aria-controls="experianc" aria-selected="false">Experiance</span>
+                    aria-controls="experianc" aria-selected="false">Experience</span>
                 <span class="tab" id="skills-tab" data-bs-toggle="pill" data-bs-target="#skills" role="tab"
                     aria-controls="skills" aria-selected="false">Professional Skills</span>
             </div>
